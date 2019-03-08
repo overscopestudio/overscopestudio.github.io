@@ -3,11 +3,11 @@
 
 ### Unique Selling Points
 
--Jazz Odyssey is a one-of-a-kind fusion of rhythm games and boss-rush games.
+- Jazz Odyssey is a one-of-a-kind fusion of rhythm games and boss-rush games.
 
--An audacious attempt to combine rhythm games with music of the jazz genre.
+- An audacious attempt to combine rhythm games with music of the jazz genre.
 
--A cel-shaded, cartoony escapade of goofy aliens powered up by magic, jazz instruments and magical jazz instruments!
+- A cel-shaded, cartoony escapade of goofy aliens powered up by magic, jazz instruments and magical jazz instruments!
 
 
 ### How To Play
@@ -19,10 +19,27 @@ While in the level, various notes will fall towards the bottom of the screen in 
 
 ### Notes You'll Encounter
 
-| gh | gh | gp |
-| -- | -- | -- |
-| cont | gfdg | gf |
-| -- | -- | -- |
+| Image | Description |
+| -- | -- |
+| ![Something went wrong][Default] | Default notes are tapped. |
+| -- | -- |
+| ![Something went wrong][Swipe] | Swipe notes are swiped. |
+| -- | -- |
+| ![Something went wrong][Hold] | Hold notes are held. They're also blue? |
+| -- | -- |
+| ![Something went wrong][Golden] | Golden notes are super tapped, they're worth lots of score! |
+| -- | -- |
+| ![Something went wrong][Poison] | Poison notes are ouch but give score, tap if you dare! |
+| -- | -- |
+| ![Something went wrong][Fake] | Fake notes aren't even there, it's all in your head, do not tap! |
+| -- | -- |
+
+[Default]: https://raw.githubusercontent.com/overscopestudio/overscopestudio.github.io/master/Images/Notes/Default.png "One tappy boi"
+[Swipe]: https://raw.githubusercontent.com/overscopestudio/overscopestudio.github.io/master/Images/Notes/Right%20Swipe.png "Swipe me daddy"
+[Hold]: https://raw.githubusercontent.com/overscopestudio/overscopestudio.github.io/master/Images/Notes/Hold.png "Hold me close"
+[Golden]: https://raw.githubusercontent.com/overscopestudio/overscopestudio.github.io/master/Images/Notes/Golden.png "money money money"
+[Poison]: https://raw.githubusercontent.com/overscopestudio/overscopestudio.github.io/master/Images/Notes/Poison.png "Looks more spiky than poisonous but whatever"
+[Fake]: https://raw.githubusercontent.com/overscopestudio/overscopestudio.github.io/master/Images/Notes/Mike1.png "Mike is placeholder for the fake notes"
 
 
 ### Screenshots
