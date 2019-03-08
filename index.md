@@ -19,9 +19,10 @@ While in the level, various notes will fall towards the bottom of the screen in 
 
 ### Notes You'll Encounter
 
-```
-put table here
-```
+| gh | gh | gp |
+| -- | -- | -- |
+| cont | gfdg | gf |
+| -- | -- | -- |
 
 
 
