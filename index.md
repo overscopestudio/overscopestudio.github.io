@@ -3,11 +3,11 @@
 
 ### Unique Selling Points
 
--Jazz Odyssey is a one-of-a-kind fusion of rhythm games and boss-rush games.
+- Jazz Odyssey is a one-of-a-kind fusion of rhythm games and boss-rush games.
 
--An audacious attempt to combine rhythm games with music of the jazz genre.
+- An audacious attempt to combine rhythm games with music of the jazz genre.
 
--A cel-shaded, cartoony escapade of goofy aliens powered up by magic, jazz instruments and magical jazz instruments!
+- A cel-shaded, cartoony escapade of goofy aliens powered up by magic, jazz instruments and magical jazz instruments!
 
 
 ### How To Play
@@ -21,24 +21,24 @@ While in the level, various notes will fall towards the bottom of the screen in 
 
 | Image | Description |
 | -- | -- |
-| ![alt text][Default] | Default notes are tapped |
+| ![Something went wrong][Default] | Default notes are tapped. |
 | -- | -- |
-| ![alt text][Swipe] | Swipe notes are swiped |
+| ![Something went wrong][Swipe] | Swipe notes are swiped. |
 | -- | -- |
-| ![alt text][Hold] | Hold notes are held |
+| ![Something went wrong][Hold] | Hold notes are held. They're also blue? |
 | -- | -- |
-| ![alt text][Golden] | Golden notes are super tapped, they're worth lots of score |
+| ![Something went wrong][Golden] | Golden notes are super tapped, they're worth lots of score! |
 | -- | -- |
-| ![alt text][Poison] | Poison notes are ouch but give score, tap if you dare |
+| ![Something went wrong][Poison] | Poison notes are ouch but give score, tap if you dare! |
 | -- | -- |
-| ![alt text][Fake] | Fake notes aren't even there, it's all in your head, do not tap |
+| ![Something went wrong][Fake] | Fake notes aren't even there, it's all in your head, do not tap! |
 | -- | -- |
 
 [Default]: https://github.com/overscopestudio/overscopestudio.github.io/blob/master/Images/Notes/Default.png "One tappy boi"
-[Swipe]: https://github.com/overscopestudio/overscopestudio.github.io/blob/master/Images/Notes/Swipe.png "Swipe me daddy"
+[Swipe]: https://github.com/overscopestudio/overscopestudio.github.io/blob/master/Images/Notes/Right%20Swipe.png "Swipe me daddy"
 [Hold]: https://github.com/overscopestudio/overscopestudio.github.io/blob/master/Images/Notes/Hold.png "Hold me close"
-[Golden]: https://github.com/overscopestudio/overscopestudio.github.io/blob/master/Images/Notes/Default.png "money money money"
-[Poison]: https://github.com/overscopestudio/overscopestudio.github.io/blob/master/Images/Notes/Default.png "Looks more spiky than poisonous but whatever"
-[Fake]: https://github.com/overscopestudio/overscopestudio.github.io/blob/master/Images/Notes/Default.png "Mike is placeholder for the fake notes"
+[Golden]: https://github.com/overscopestudio/overscopestudio.github.io/blob/master/Images/Notes/Golden.png "money money money"
+[Poison]: https://github.com/overscopestudio/overscopestudio.github.io/blob/master/Images/Notes/Poison.png "Looks more spiky than poisonous but whatever"
+[Fake]: https://github.com/overscopestudio/overscopestudio.github.io/blob/master/Images/Notes/Mike1.png "Mike is placeholder for the fake notes"
 
 
