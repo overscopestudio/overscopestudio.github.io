@@ -19,9 +19,21 @@ While in the level, various notes will fall towards the bottom of the screen in 
 
 ### Notes You'll Encounter
 
-| gh | gh | gp |
-| -- | -- | -- |
-| cont | gfdg | gf |
-| -- | -- | -- |
+| Image | Description |
+| -- | -- |
+| ![alt text][Default] | Default notes are tapped |
+| -- | -- |
+| ![alt text][Swipe] | Swipe notes are swiped |
+| -- | -- |
+| ![alt text][Hold] | Hold notes are held |
+| -- | -- |
+| ![alt text][Golden] | Golden notes are tapped, they're worth lots of score |
+| -- | -- |
+| ![alt text][Poison] | Default notes are tapped |
+| -- | -- |
+| ![alt text][Mike1] | Default notes are tapped |
+| -- | -- |
+
+[Default]: https://github.com/overscopestudio/overscopestudio.github.io/blob/master/Images/Notes/Default.png "One tappy boi"
 
 
