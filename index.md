@@ -34,11 +34,11 @@ While in the level, various notes will fall towards the bottom of the screen in 
 | ![Something went wrong][Fake] | Fake notes aren't even there, it's all in your head, do not tap! |
 | -- | -- |
 
-[Default]: https://github.com/overscopestudio/overscopestudio.github.io/blob/master/Images/Notes/Default.png "One tappy boi"
-[Swipe]: https://github.com/overscopestudio/overscopestudio.github.io/blob/master/Images/Notes/Right%20Swipe.png "Swipe me daddy"
-[Hold]: https://github.com/overscopestudio/overscopestudio.github.io/blob/master/Images/Notes/Hold.png "Hold me close"
-[Golden]: https://github.com/overscopestudio/overscopestudio.github.io/blob/master/Images/Notes/Golden.png "money money money"
-[Poison]: https://github.com/overscopestudio/overscopestudio.github.io/blob/master/Images/Notes/Poison.png "Looks more spiky than poisonous but whatever"
-[Fake]: https://github.com/overscopestudio/overscopestudio.github.io/blob/master/Images/Notes/Mike1.png "Mike is placeholder for the fake notes"
+[Default]: https://raw.githubusercontent.com/overscopestudio/overscopestudio.github.io/master/Images/Notes/Default.png "One tappy boi"
+[Swipe]: https://raw.githubusercontent.com/overscopestudio/overscopestudio.github.io/master/Images/Notes/Right%20Swipe.png "Swipe me daddy"
+[Hold]: https://raw.githubusercontent.com/overscopestudio/overscopestudio.github.io/master/Images/Notes/Hold.png "Hold me close"
+[Golden]: https://raw.githubusercontent.com/overscopestudio/overscopestudio.github.io/master/Images/Notes/Golden.png "money money money"
+[Poison]: https://raw.githubusercontent.com/overscopestudio/overscopestudio.github.io/master/Images/Notes/Poison.png "Looks more spiky than poisonous but whatever"
+[Fake]: https://raw.githubusercontent.com/overscopestudio/overscopestudio.github.io/master/Images/Notes/Mike1.png "Mike is placeholder for the fake notes"
 
 
