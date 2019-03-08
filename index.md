@@ -27,13 +27,18 @@ While in the level, various notes will fall towards the bottom of the screen in 
 | -- | -- |
 | ![alt text][Hold] | Hold notes are held |
 | -- | -- |
-| ![alt text][Golden] | Golden notes are tapped, they're worth lots of score |
+| ![alt text][Golden] | Golden notes are super tapped, they're worth lots of score |
 | -- | -- |
-| ![alt text][Poison] | Default notes are tapped |
+| ![alt text][Poison] | Poison notes are ouch but give score, tap if you dare |
 | -- | -- |
-| ![alt text][Mike1] | Default notes are tapped |
+| ![alt text][Fake] | Fake notes aren't even there, it's all in your head, do not tap |
 | -- | -- |
 
 [Default]: https://github.com/overscopestudio/overscopestudio.github.io/blob/master/Images/Notes/Default.png "One tappy boi"
+[Swipe]: https://github.com/overscopestudio/overscopestudio.github.io/blob/master/Images/Notes/Swipe.png "Swipe me daddy"
+[Hold]: https://github.com/overscopestudio/overscopestudio.github.io/blob/master/Images/Notes/Hold.png "Hold me close"
+[Golden]: https://github.com/overscopestudio/overscopestudio.github.io/blob/master/Images/Notes/Default.png "money money money"
+[Poison]: https://github.com/overscopestudio/overscopestudio.github.io/blob/master/Images/Notes/Default.png "Looks more spiky than poisonous but whatever"
+[Fake]: https://github.com/overscopestudio/overscopestudio.github.io/blob/master/Images/Notes/Default.png "Mike is placeholder for the fake notes"
 
 
