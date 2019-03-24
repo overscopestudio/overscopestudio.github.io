@@ -1,6 +1,5 @@
-<!-- Blog template -->
-# Jazz Odyssey
-
+# Ashley's Blog
+ 
  <!-- Nav -->
 <table style="border:0px none;" width="100%">
 	<tr>
@@ -13,5 +12,7 @@
 
 <!-- Main Content -->
 
-## <!-- Title -->
-### Date: <!-- Date -->
+## Audio 2.0
+### Date: 24/03/19
+
+//stuff
