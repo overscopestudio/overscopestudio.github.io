@@ -9,16 +9,6 @@
 	</tr>
 </table>
 
-
-### Unique Selling Points
-
-- Jazz Odyssey is a one-of-a-kind fusion of rhythm games and boss-rush games.
-
-- An audacious attempt to combine rhythm games with music of the jazz genre.
-
-- A cel-shaded, cartoony escapade of goofy aliens powered up by magic, jazz instruments and magical jazz instruments!
-
-
 ### How To Play
 
 When you first launch the game, you will appear in the safe area known as the Haven. The Haven is your home within the story and the central location on the map. When you tap on the portal, you will be taken to an overview map of the world, where you can see the various islands which act as the levels for the game. Selecting an island from the map will return you to the Haven and the portal will become activated. Tapping on the portal again will take you to the selected level.
@@ -50,6 +40,13 @@ While in the level, various notes will fall towards the bottom of the screen in 
 [Poison]: https://raw.githubusercontent.com/overscopestudio/overscopestudio.github.io/master/Images/Notes/Poison.png "Looks more spiky than poisonous but whatever"
 [Fake]: https://raw.githubusercontent.com/overscopestudio/overscopestudio.github.io/master/Images/Notes/Mike1.png "Mike is placeholder for the fake notes"
 
+### Unique Selling Points
+
+- Jazz Odyssey is a one-of-a-kind fusion of rhythm games and boss-rush games.
+
+- An audacious attempt to combine rhythm games with music of the jazz genre.
+
+- A cel-shaded, cartoony escapade of goofy aliens powered up by magic, jazz instruments and magical jazz instruments!
 
 ### Screenshots
 
