@@ -1,6 +1,6 @@
 # Jazz Odyssey
 
-<table border="0px" width="800px">
+<table style="border:0px;" width="800px">
 	<tr>
 		<td width="200px"> Home </td>
 		<td width="200px"> <a href="amsBlog.md">Ashleys Blog</a> </td>
