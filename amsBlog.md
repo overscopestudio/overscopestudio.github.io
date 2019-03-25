@@ -15,15 +15,15 @@
 ## Audio 2.0
 ##### Date: 24/03/19
 
-Helloo all! I'm Ashley and I’m 1 of 3 programmers at OverScope Studios who is currently working on Jazz Odyssey an audio rhythmic targeted at the mobile market. I am also currently a first-year student at Falmouth university studding Computing for Games.
+Helloo all! I'm Ashley and I’m 1 of 3 programmers at OverScope Studios who is currently working on Jazz Odyssey an audio rhythmic targeted at the mobile market. I am also currently a first-year student at Falmouth university studying Computing for Games.
 
-This is the first of (hopefully) many blog post regarding the issues I have faced with game development and how I have overcome the problem. In this blog post we will be looking at the audio system behind Jazz Odyssey
+This is the first of (hopefully) many blog posts regarding the issues I have faced with game development and how I have overcome the problem. In this blog post we will be looking at the audio system behind Jazz Odyssey
 
-A couple of weeks ago during a team meeting one of the designers mentioned that there is no background music during the dialogue phases of Jazz Odyssey. To be fair I hadn’t really given it much thought since alpha stage as we had so much to implement, but it all calmed down now and we can mainly focus on refactoring and improvements to our code base. So I decided to take it on and implement the dialogue background audio and the other audio features that are currently missing such as sound effects (i.e. filters, pitch change and fading etc...). But it turns out that it was not going to be as simple as just refactoring the code base but required a total rewrite of the audio systems.
+A couple of weeks ago during a team meeting one of the designers mentioned that there is no background music during the dialogue phases of Jazz Odyssey. To be fair I hadn’t really given it much thought since alpha stage as we had so much to implement, but it has all calmed down now and we can mainly focus on refactoring and improvements to our code base. So I decided to take it on and implement the dialogue background audio and the other audio features that are currently missing such as sound effects (i.e. filters, pitch change and fading etc...). But it turns out that it was not going to be as simple as just refactoring the code base but required a total rewrite of the audio systems.
 
-When I originally started working on the audio system I ran into a number of problems such as timing issues where inputs would falling out of sync, the TimePrecentage call back in unreal would not work on android and crashes if there were no audio devices initialized just to name a few. This tock a fair bit of research to overcome the issues since I was new to the Unreal engine and as a result it lead to a rather messy code base that had been "hacked" together through trial and error.
+When I originally started working on the audio system I ran into a number of problems such as timing issues where inputs would fall out of sync, the TimePrecentage call back in unreal would not work on android and crashes if there were no audio devices initialized just to name a few. This took a fair bit of research to overcome the issues since I was new to the Unreal engine and as a result it lead to a rather messy code base that had been "hacked" together through trial and error.
 
-After an hour or so of trying to figure out how to refactor the code it became apparent that I needed redesign the entire system from the ground up, since there where unused functions being called within the audio manager itself, bad naming conventions and an over complicated code. For instance, there was one function that really stood out as being badly named and over complicated called SetAudioPosition that was something like
+After an hour or so of trying to figure out how to refactor the code it became apparent that I needed to redesign the entire system from the ground up, since there where unused functions being called within the audio manager itself, bad naming conventions and an over complicated code. For instance, there was one function that really stood out as being badly named and over complicated called SetAudioPosition that was something like
 
 ```
 Procedure SetAudioPosiution(delta time : float):
@@ -45,7 +45,7 @@ End procedure
 ```
 For a start it was called in Tick and none of the variables where used, we actually used a variable called audioFinsihed instead of ended that was set in OnAudioFinished and the audio time came from a function called GetAudioPosition, so the SetAudioPosition function itself was totally useless.
 
-So once I had decided that I should redesign the system from the ground up, I first thought about what functions should stay and be refactored and what should be removed. It turned out I only needed to refactor GetAudioPosition since it was the main time system used in the game to keep everything in sync with the audio, and it was used throughout the entire code base, everything else however could be deleted safely even playAudio. The next thing I had to do was decide how to implement the new audio time system, so first I added a function called UpdateAudioDelta which simple gets the amount of time that has pasted since the last audio update.
+So once I had decided that I should redesign the system from the ground up, I first thought about what functions should stay and be refactored and what should be removed. It turned out I only needed to refactor GetAudioPosition since it was the main time system used in the game to keep everything in sync with the audio, and it was used throughout the entire code base, everything else however could be deleted safely even playAudio. The next thing I had to do was decide how to implement the new audio time system, so first I added a function called UpdateAudioDelta which simple gets the amount of time that has past since the last audio update.
 
 ```
 void AudioManager::UpdateAudioDelta(){
@@ -71,7 +71,7 @@ void AudioManager::UpdateAudioPosition(float delta){
 }
 ```
 
-I then added 2 getters to the AudioManager so that the AudioDelta and AudioPosition where both available publicly in the code. This now meant that the game was working again although there was no audio playing in the game. So, the next decision I had to make was how can I implement the music to both the dialogue and main game and decided that I could use just a single audio component since there would be a seconded or two between the dialogue music and the main game music. So, for that I added a Sigle audio component and next audio clip variables to the header file.
+I then added 2 getters to the AudioManager so that the AudioDelta and AudioPosition where both available publicly in the code. This now meant that the game was working again although there was no audio playing in the game. So, the next decision I had to make was how can I implement the music to both the dialogue and main game and decided that I could use just a single audio component since there would be a second or two between the dialogue music and the main game music. So, for that I added a Sigle audio component and next audio clip variables to the header file.
 
 ```
 AudioManager.h
@@ -184,7 +184,7 @@ then just under start volume I setup the fade
 }
 ```
 
-Now I was just case of adding StopAudio and pretty much doing the same.
+Now it was just case of adding StopAudio and pretty much doing the same.
 
 ```
 void AudioManager::StopAudio(float fadeOutLength)
