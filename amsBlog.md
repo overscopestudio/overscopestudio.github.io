@@ -218,6 +218,6 @@ void AudioManager::AudioFinished()
 }
 ``` 
 
-Finally all that was left to do was set and trigger the music depending on the games state (which I won’t go into too much detail about, since it’s an entire blog post itself), but basically I added an audio clip and fade variables to both the dialogue and main games stats, witch triggers the start audio and the audio is stopped when the end state is triggered, the only difference it that the dialogue state also set its clip to loop since we don’t know how long the player will be on the dialogue and the main game is only as long as the music.
+Finally all that was left to do was set and trigger the music depending on the games state (which I won’t go into too much detail about, since it’s an entire blog post itself), but basically I added an audio clip and fade variables to both the dialogue and main games stats, witch triggers the start audio and the audio is stopped when the end state is triggered, the only difference is that the dialogue state also set its clip to loop since we don’t know how long the player will be on the dialogue and the main game is only as long as the music.
 
 So hopefully this give you an idea how we have applied the audio system to Jazz Odyssey, it was difficult at first since the games time system needed to be in sync with the audio but we got there in the end, and now we have a fairly solid system that gives the player a smooth experience between the dialogue and main game.
