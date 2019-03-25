@@ -87,7 +87,7 @@ followed by adding functions to set and trigger the next audio clip
 ```
 AudioManager.cpp
 
-void AAudioManager::SetNextAudioClip(USoundWave* audio, bool loop)
+void AudioManager::SetNextAudioClip(USoundWave* audio, bool loop)
 {
 
 	nextAudioClip = audio;
@@ -97,7 +97,7 @@ void AAudioManager::SetNextAudioClip(USoundWave* audio, bool loop)
 
 }
 
-void AAudioManager::PlayNextAudioClip(float audioPosition)
+void AudioManager::PlayNextAudioClip(float audioPosition)
 {
 
 	if ( !nextAudioClip ) return;	// no audio to play
@@ -160,7 +160,7 @@ void AudioManager::FadeAudio(delta)
 Now all I had to do was implement this to PlayNextAudioClip and add a new function to stop the audio playing. So, i added a parameter call FadeInLength to playNextAudioClip so it became 
 
 ```
-void AAudioManager::PlayNextAudioClip(float audioPosition, float fadeInLength)
+void AudioManager::PlayNextAudioClip(float audioPosition, float fadeInLength)
 ```
 
 then just under start volume I setup the fade
