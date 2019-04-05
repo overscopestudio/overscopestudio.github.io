@@ -51,12 +51,12 @@ Suddenly, a spark of genius! Audio isn't the only thing we can export with Audac
 
 ```
 
-TArray<FString> ULoadAudacityLabelsToArray::LoadTextFile()
+TArray&#60;FString&#62; ULoadAudacityLabelsToArray::LoadTextFile()
 {
 	FString textfile = CreateFilePath();
 	FString loadResult = ReadFileToString(textfile);
 	PrintLoadResultSuccess(loadResult);
-	TArray<FString> notes = SeparateTextFileByLine(loadResult);
+	TArray&#60;FString&#62; notes = SeparateTextFileByLine(loadResult);
 
 	return notes;
 }
@@ -135,12 +135,12 @@ void ULoadAudacityLabelsToArray::InterrogateLines()
 	FString noteTimeString = "";
 	FString noteTimeEndString = "";
 
-	for (int32 i = 0; i < textFileLines.Num(); i++)
+	for (int32 i = 0; i &#60; textFileLines.Num(); i++)
 	{
 		currentLine = textFileLines[i];
 		lineNumber++;
 		
-		for (int32 j = 0; j < currentLine.Len(); j++)
+		for (int32 j = 0; j &#60; currentLine.Len(); j++)
 		{
 			currentChar = currentLine.Mid(j, 1).ToLower();
 
@@ -244,21 +244,21 @@ void ULoadAudacityLabelsToArray::InterrogateLines()
 		{
 			if (bIsLeft) 
 			{ 
-				leftSpawner->AddInputTime( noteData); 
+				leftSpawner-&#62;AddInputTime( noteData); 
 				UE_LOG(GenerateNotesArray, Log, TEXT("Line number '%d': Note added successfully. Time: %s. Side: LEFT. Type: %s. Hold time: %s."), lineNumber, *noteTimeString, *EnumToString(noteData.noteType), *FString::SanitizeFloat(noteData.noteHoldLength));
 			}
 			else // is Right
 			{ 
-				rightSpawner->AddInputTime( noteData ); 
+				rightSpawner-&#62;AddInputTime( noteData ); 
 				UE_LOG(GenerateNotesArray, Log, TEXT("Line number '%d': Note added successfully. Time: %s. Side: RIGHT. Type: %s. Hold time: %s."), lineNumber, *noteTimeString, *EnumToString(noteData.noteType), *FString::SanitizeFloat(noteData.noteHoldLength));
 			}
 		}
 		else
 		{
 			if (bIsLeft)  
-				leftSpawner->AddInputTime( noteData ); 
+				leftSpawner-&#62;AddInputTime( noteData ); 
 			else		  
-				rightSpawner->AddInputTime( noteData );
+				rightSpawner-&#62;AddInputTime( noteData );
 		}
 		noteTimeString = "";
 		noteTimeEndString = "";
