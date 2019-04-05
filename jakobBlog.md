@@ -5,8 +5,8 @@
 	<tr>
 		<td width="25%"> <a href="index.html"> Home </a> </td>
 		<td width="25%"> <a href="amsBlog.html">Ashleys Blog</a> </td>
-		<td width="25%"> Jakobs Blog </td>
-		<td width="25%"> Jhoes Blog </td>
+		<td width="25%"> <a href="jakobBlog.html">Jakob's Blog</a> </td>
+		<td width="25%"> <a href="joshBlog.html">Josh's Blog</a> </td>
 	</tr>
 </table>
 
