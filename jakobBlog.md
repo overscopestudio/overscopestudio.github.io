@@ -15,23 +15,6 @@
 ## Automating a Boring Process for Our Designers
 ##### Date: 05/04/19
 
-
-
-<details><summary>CLICK ME</summary>
-<p>
-
-#### yes, even hidden code blocks!
-
-```python
-print("hello world!")
-```
-
-</p>
-</details>
-
-
-
-
 One of the first things I had taken into consideration regarding our rhythm game was the process of mapping the 'beats' (buttons that the player would tap) to a given audio file, a process I'll refer to as 'beatmapping'. We knew we would need some sort of visual interface or tool to assist, but struggled to think of ways to streamline the process outside of creating new software. Before the first week, another of our programmers (Ashley) had already a lot of progress on a custom Unreal Engine plug in, complete with an interface for visual assistance! 
 
 Eventually, however, we settled on using a free to use software called Audacity.
@@ -86,21 +69,23 @@ The start time of the label would represent the 'perfect time' for the player to
 <p>
 
 ```
-	// We have loadResult, a raw string version of the text file
-	// Load result has the following structure:
-	//	5.000000	5.000000    	rlb
-	//	7.000000	8.500000	lh
-	//	(start)		(end)		(label)
+	/*	We have loadResult, a raw string version of the text file
+		Load result has the following structure:
+		5.145463	7.645463	lh
+		9.621003	9.621003	r
+		10.054357	10.054357	rpb
+		11.151207	11.151207	l
+		(start)		(end)		(label)	*/
 ```
 
 </p>
 </details>
 
-This allows our designers to 
+This allows our designers to map notes directly to the waveform, providing both convenience and precision.
 
 Here's the function from the first working revision of the class that would actually do the interpretation, character by character. Be careful however, it contains a rather lengthy "if" statement.
 
-<details><summary>if (reader == click here) {show mess}</summary>
+<details><summary>if ( reader == click_here ) { show mess; }</summary>
 <p>
 
 ```
@@ -266,4 +251,108 @@ Wow.
 
 As we can see in the last few lines, we communicate directly with the note spawner instances to use their AddInputTime functions. This adds the noteData of each individual note, including time, type, 'hold' length and "is bubbled".
 
-I've recently 
+I've recently 'refactored' the entire class, so now the process is clearly labelled and easy to follow. Here are some examples of the new code.
+
+<details><summary>The main function/loop.</summary>
+<p>
+
+```
+void USpawnerPopulator::PopulateSpawners(TArray<FString> &notes)
+{
+	for (currentLine = 0; currentLine < notes.Num(); currentLine++) // for each line in the array
+	{
+		ResetNoteDefaults();
+		ReadNoteFromLine(notes[currentLine]);
+
+		if (bValidEntry) 
+		{ 
+			SetNoteData();
+			SubmitNoteData(); 
+
+			if (bSpamLogWithSuccessfulNotes) { LogSuccessfulNote(); }
+		}
+	}
+}
+```
+
+</p>
+</details>
+
+<details><summary>Reading each line, one character at a time.</summary>
+<p>
+
+```
+void USpawnerPopulator::ReadNoteFromLine(FString &noteString)
+{
+	for (int i = 0; i < noteString.Len(); i++) // for each character in the line
+	{
+		if (bValidEntry) // stop reading the line if the line becomes invalid
+		{
+			FString chara = noteString.Mid(i, 1).ToLower();
+
+			UpdateNoteData(chara);
+		}
+	}
+}
+```
+
+</p>
+</details>
+
+<details><summary>Handling all possible cases for the label.</summary>
+<p>
+
+```
+void USpawnerPopulator::UpdateNoteTyping(FString &chara)
+{
+	switch (linePos)
+	{
+	case ECurrentPositionInLine::NoteLane:
+
+		UpdateNoteLane(chara);
+		linePos = ECurrentPositionInLine::NoteType;
+		break;
+
+	case ECurrentPositionInLine::NoteType:
+
+		UpdateNoteType(chara);
+		break;
+
+	case ECurrentPositionInLine::NoteModifiers:
+
+		UpdateNoteModifier(chara);
+		break;
+
+	case ECurrentPositionInLine::ExpectingNewLine:
+
+		HandleExcessCharacters(chara);
+		break;
+	}
+}
+```
+
+</p>
+</details>
+
+<details><summary>Adding new note types is easy thanks to TMap!</summary>
+<p>
+
+```
+void USpawnerPopulator::MapTypeSpecifierToType()
+{
+	typeSpecifierToEnumMap.Add(goldenNoteSpecifier, ENoteType::Golden);
+	typeSpecifierToEnumMap.Add(holdNoteSpecifier, ENoteType::Hold);
+	typeSpecifierToEnumMap.Add(twinnedNoteSpecifier, ENoteType::Twinned);
+	...
+}
+
+ENoteType USpawnerPopulator::TypeSpecifierToEnum(FString type)
+{
+	return typeSpecifierToEnumMap[type];
+}
+```
+
+</p>
+</details>
+
+
