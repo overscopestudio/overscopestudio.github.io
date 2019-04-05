@@ -17,7 +17,7 @@
 
 One of the first things I had taken into consideration regarding our rhythm game was the process of mapping the 'beats' (buttons that the player would tap) to a given audio file, a process I'll refer to as 'beatmapping'. We knew we would need some sort of visual interface or tool to assist, but struggled to think of ways to streamline the process outside of creating new software. Before the first week, another of our programmers (Ashley) had already a lot of progress on a custom Unreal Engine plug in, complete with an interface for visual assistance! 
 
-Eventually, however, we settled on using a free to use software called Audacity.
+However, we eventually settled on using a free software called Audacity.
 
 ```
 #include "LoadAudacityLabelsToArray.h"
@@ -359,4 +359,4 @@ ENoteType USpawnerPopulator::TypeSpecifierToEnum(FString type)
 </p>
 </details>
 
-
+Once all is said and done
