@@ -18,7 +18,6 @@
 Segment
 
 ```
-SetAudioPosiution(delta time : float):
 
 // Code
 	
