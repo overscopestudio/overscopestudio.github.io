@@ -31,8 +31,8 @@ Suddenly, a spark of genius! Audio isn't the only thing we can export with Audac
 
 <details><summary>Turning a text file into an array of strings.</summary>
 <p>
-```
 
+```
 TArray<FString> ULoadAudacityLabelsToArray::LoadTextFile()
 {
 	FString textfile = CreateFilePath();
@@ -42,15 +42,15 @@ TArray<FString> ULoadAudacityLabelsToArray::LoadTextFile()
 
 	return notes;
 }
-
 ```
+
 </p>
 </details>
 
 <details><summary>Reading a text file with Unreal.</summary>
 <p>
-```
 
+```python
 FString ULoadAudacityLabelsToArray::ReadFileToString(FString &textfile)
 {
 	FString loadResult = "";
@@ -60,8 +60,8 @@ FString ULoadAudacityLabelsToArray::ReadFileToString(FString &textfile)
 
 	return loadResult;
 }
-
 ```
+
 </p>
 </details>
 
@@ -69,15 +69,15 @@ The start time of the label would represent the 'perfect time' for the player to
 
 <details><summary>Reading a text file with Unreal.</summary>
 <p>
-```
 
+```python
 	// We have loadResult, a raw string version of the text file
 	// Load result has the following structure:
 	//  5.000000	5.000000    rlb
 	//  7.000000	8.500000	lh
 	//	(start_number) (tab) (end_number (for hold notes)) (tab) (label) ('/r' then '/n')
-
 ```
+
 </p>
 </details>
 
@@ -87,8 +87,8 @@ Here's the function from the first working revision of the class that would actu
 
 <details><summary>if (reader == click here) {show mess}</summary>
 <p>
-```
 
+```python
 void ULoadAudacityLabelsToArray::InterrogateLines()
 {
 	// noteData.noteTime = GetLabelStart();
@@ -242,8 +242,8 @@ void ULoadAudacityLabelsToArray::InterrogateLines()
 		noteData.bIsBubbled = false;
 	}
 }
-
 ```
+
 </p>
 </details>
 
