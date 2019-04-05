@@ -12,7 +12,7 @@
 
 <!-- Main Content -->
 
-## Title
+## Automating a Boring Process for Our Designers
 ##### Date: 05/04/19
 
 Segment
