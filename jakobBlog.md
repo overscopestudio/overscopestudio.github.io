@@ -25,13 +25,12 @@ One of the first things I had taken into consideration regarding our rhythm game
 
 Here's one of the functions from the first revision of the class. Be careful, it contains a rather lengthy "if" statement.
 
-<details><summary>CLICK ME</summary>
+<details><summary>Show me the mess.</summary>
 <p>
 
-#### yes, even hidden code blocks!
 
-```python
-print("hello world!")
+```C++
+std::cout << "Hello world!" << std::endl;
 ```
 
 </p>
