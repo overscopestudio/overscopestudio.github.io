@@ -50,6 +50,7 @@ Suddenly, a spark of genius! Audio isn't the only thing we can export with Audac
 <p>
 
 ```
+
 TArray<FString> ULoadAudacityLabelsToArray::LoadTextFile()
 {
 	FString textfile = CreateFilePath();
@@ -59,6 +60,7 @@ TArray<FString> ULoadAudacityLabelsToArray::LoadTextFile()
 
 	return notes;
 }
+
 ```
 
 </p>
@@ -68,6 +70,7 @@ TArray<FString> ULoadAudacityLabelsToArray::LoadTextFile()
 <p>
 
 ```
+
 FString ULoadAudacityLabelsToArray::ReadFileToString(FString &textfile)
 {
 	FString loadResult = "";
@@ -77,6 +80,7 @@ FString ULoadAudacityLabelsToArray::ReadFileToString(FString &textfile)
 
 	return loadResult;
 }
+
 ```
 
 </p>
@@ -88,11 +92,13 @@ The start time of the label would represent the 'perfect time' for the player to
 <p>
 
 ```
+
 	// We have loadResult, a raw string version of the text file
 	// Load result has the following structure:
 	//  5.000000	5.000000    rlb
 	//  7.000000	8.500000	lh
 	//	(start_number) (tab) (end_number (for hold notes)) (tab) (label) ('/r' then '/n')
+	
 ```
 
 </p>
@@ -106,6 +112,7 @@ Here's the function from the first working revision of the class that would actu
 <p>
 
 ```
+
 void ULoadAudacityLabelsToArray::InterrogateLines()
 {
 	// noteData.noteTime = GetLabelStart();
@@ -259,6 +266,7 @@ void ULoadAudacityLabelsToArray::InterrogateLines()
 		noteData.bIsBubbled = false;
 	}
 }
+
 ```
 
 </p>
