@@ -12,7 +12,7 @@
 
 <!-- Main Content -->
 
-## Automating a Boring Process for Our Designers
+## Streamlining a Tedious Process for Our Designers
 ##### Date: 05/04/19
 
 One of the first things I had taken into consideration regarding our rhythm game was the process of mapping the 'beats' (buttons that the player would tap) to a given audio file, a process I'll refer to as 'beatmapping'. We knew we would need some sort of visual interface or tool to assist, but struggled to think of ways to streamline the process outside of creating new software. Before the first week, another of our programmers (Ashley) had already a lot of progress on a custom Unreal Engine plug in, complete with an interface for visual assistance! 
@@ -65,16 +65,18 @@ FString ULoadAudacityLabelsToArray::ReadFileToString(FString &textfile)
 
 The start time of the label would represent the 'perfect time' for the player to hit a note, while any notes the player has to 'hold' would also take advantage of the end time. The label description would specify which lane, type and special modifiers the note should spawn with. For example, "lpb" would spawn a note in the LEFT lane, with the POISON note type, with the BUBBLED modifier.
 
-<details><summary>Reading a text file with Unreal.</summary>
+<details><summary>Structure of the text file from Audacity.</summary>
 <p>
 
 ```
 	/*	We have loadResult, a raw string version of the text file
 		Load result has the following structure:
+		
 		5.145463	7.645463	lh
 		9.621003	9.621003	r
 		10.054357	10.054357	rpb
 		11.151207	11.151207	l
+		
 		(start)		(end)		(label)	*/
 ```
 
@@ -83,7 +85,9 @@ The start time of the label would represent the 'perfect time' for the player to
 
 This allows our designers to map notes directly to the waveform, providing both convenience and precision.
 
-Here's the function from the first working revision of the class that would actually do the interpretation, character by character. Be careful however, it contains a rather lengthy "if" statement.
+Here's the function from the first working revision of the class that would actually do the interpretation, character by character. 
+
+<b>Be careful however, it contains a rather lengthy "if" statement.</b>
 
 <details><summary>if ( reader == click_here ) { show mess; }</summary>
 <p>
