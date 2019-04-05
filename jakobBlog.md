@@ -30,7 +30,6 @@ Upon loading an audio file into the Audacity software, we're shown a visual repr
 Suddenly, a spark of genius! Audio isn't the only thing we can export with Audacity, it also supports the creation and exporting of labels! Labels were exported as a text file in a specific format, showing the start & end time of the label, as well as the description of the label.
 
 <details><summary>Turning a text file into an array of strings.</summary>
-<p>
 
 ```
 TArray<FString> ULoadAudacityLabelsToArray::LoadTextFile()
@@ -44,11 +43,9 @@ TArray<FString> ULoadAudacityLabelsToArray::LoadTextFile()
 }
 ```
 
-</p>
 </details>
 
 <details><summary>Reading a text file with Unreal.</summary>
-<p>
 
 ```python
 FString ULoadAudacityLabelsToArray::ReadFileToString(FString &textfile)
@@ -62,13 +59,11 @@ FString ULoadAudacityLabelsToArray::ReadFileToString(FString &textfile)
 }
 ```
 
-</p>
 </details>
 
 The start time of the label would represent the 'perfect time' for the player to hit a note, while any notes the player has to 'hold' would also take advantage of the end time. The label description would specify which lane, type and special modifiers the note should spawn with. For example, "lpb" would spawn a note in the LEFT lane, with the POISON note type, with the BUBBLED modifier.
 
 <details><summary>Reading a text file with Unreal.</summary>
-<p>
 
 ```python
 	// We have loadResult, a raw string version of the text file
@@ -78,7 +73,6 @@ The start time of the label would represent the 'perfect time' for the player to
 	//	(start_number) (tab) (end_number (for hold notes)) (tab) (label) ('/r' then '/n')
 ```
 
-</p>
 </details>
 
 This allows our designers to 
@@ -86,7 +80,6 @@ This allows our designers to
 Here's the function from the first working revision of the class that would actually do the interpretation, character by character. Be careful however, it contains a rather lengthy "if" statement.
 
 <details><summary>if (reader == click here) {show mess}</summary>
-<p>
 
 ```python
 void ULoadAudacityLabelsToArray::InterrogateLines()
@@ -244,7 +237,6 @@ void ULoadAudacityLabelsToArray::InterrogateLines()
 }
 ```
 
-</p>
 </details>
 
 Wow.
