@@ -88,7 +88,7 @@ The start time of the label would represent the 'perfect time' for the player to
 ```
 	// We have loadResult, a raw string version of the text file
 	// Load result has the following structure:
-	//	5.000000	5.000000    rlb
+	//	5.000000	5.000000    	rlb
 	//	7.000000	8.500000	lh
 	//	(start)		(end)		(label)
 ```
