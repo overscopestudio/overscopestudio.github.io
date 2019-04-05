@@ -30,7 +30,9 @@ Here's one of the functions from the first revision of the class. Be careful, it
 
 
 ```c++
+
 std::cout << "Hello world!" << std::endl;
+
 ```
 
 </p>
