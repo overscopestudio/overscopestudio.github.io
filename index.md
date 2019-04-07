@@ -22,8 +22,8 @@ While in the level, various notes will fall towards the bottom of the screen in 
 ### Notes You'll Encounter
 <table>
   <td>
-	<th>Image</th>
-	<th>Description</th>
+	<tr>Image</th>
+	<tr>Description</th>
   </td>
 <td>
 	<tr>![Something went wrong][Default]</tr>
