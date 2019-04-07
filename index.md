@@ -21,34 +21,34 @@ While in the level, various notes will fall towards the bottom of the screen in 
 
 ### Notes You'll Encounter
 <table>
-  <td>
-	<tr>Image</th>
-	<tr>Description</th>
-  </td>
-<td>
-	<tr>![Something went wrong][Default]</tr>
-	<tr>Default notes are tapped</tr>
-</td>
-<td>
-	<tr>![Something went wrong][Swipe]</tr>
-	<tr>Swipe notes are swiped</tr>
-</td>
-<td>
-	<tr>![Something went wrong][Hold]</tr>
-	<tr>Hold notes are held. They're also blue?</tr>
-</td>
-<td>
-	<tr>![Something went wrong][Golden]</tr>
-	<tr>Golden notes are super tapped, they're worth lots of score! </tr>
-</td>
-<td>
-	<tr>![Something went wrong][Poison]</tr>
-	<tr>Poison notes are ouch but give score, tap if you dare!</tr>
-</td>
-<td>
-	<tr>![Something went wrong][Fake]</tr>
-	<tr>Fake notes aren't even there, it's all in your head, do not tap! </tr>
-</td>
+  <tr>
+	<th>Image</th>
+	<th>Description</th>
+  </tr>
+<tr>
+	<td>![Something went wrong][Default]</td>
+	<td>Default notes are tapped</td>
+</tr>
+<tr>
+	<td>![Something went wrong][Swipe]</td>
+	<td>Swipe notes are swiped</td>
+</tr>
+<tr>
+	<td>![Something went wrong][Hold]</td>
+	<td>Hold notes are held. They're also blue?</td>
+</tr>
+<tr>
+	<td>![Something went wrong][Golden]</td>
+	<td>Golden notes are super tapped, they're worth lots of score! </td>
+</tr>
+<tr>
+	<td>![Something went wrong][Poison]</td>
+	<td>Poison notes are ouch but give score, tap if you dare!</td>
+</tr>
+<tr>
+	<td>![Something went wrong][Fake]</td>
+	<td>Fake notes aren't even there, it's all in your head, do not tap! </td>
+</tr>
 </table>
 
 [Default]: https://raw.githubusercontent.com/overscopestudio/overscopestudio.github.io/master/Images/Notes/Default.png "One tappy boi"
