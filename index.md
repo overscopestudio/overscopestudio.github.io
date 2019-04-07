@@ -26,36 +26,36 @@ While in the level, various notes will fall towards the bottom of the screen in 
 	<th>Description</th>
   </tr>
 <tr>
-	<td>![Something went wrong][Default]</td>
+	<td><img src="./Images/Notes/Default.png"></td>
 	<td>Default notes are tapped</td>
 </tr>
 <tr>
-	<td>![Something went wrong][Swipe]</td>
+	<td><img src="./Images/Right%20Swipe.png"></td>
 	<td>Swipe notes are swiped</td>
 </tr>
 <tr>
-	<td>![Something went wrong][Hold]</td>
+	<td><img src="./Images/Hold.png"></td>
 	<td>Hold notes are held. They're also blue?</td>
 </tr>
 <tr>
-	<td>![Something went wrong][Golden]</td>
+	<td><img src="./Imagess/Golden.png"></td>
 	<td>Golden notes are super tapped, they're worth lots of score! </td>
 </tr>
 <tr>
-	<td>![Something went wrong][Poison]</td>
+	<td><img src="./Imagess/Poison.png"></td>
 	<td>Poison notes are ouch but give score, tap if you dare!</td>
 </tr>
 <tr>
-	<td>![Something went wrong][Fake]</td>
+	<td><!--<img src="./Imagess/Poison.png">--></td>
 	<td>Fake notes aren't even there, it's all in your head, do not tap! </td>
 </tr>
 </table>
 
-[Default]: https://raw.githubusercontent.com/overscopestudio/overscopestudio.github.io/master/Images/Notes/Default.png "One tappy boi"
+[Default]: https://raw.githubusercontent.com/overscopestudio/overscopestudio.github.io/master/ "One tappy boi"
 [Swipe]: https://raw.githubusercontent.com/overscopestudio/overscopestudio.github.io/master/Images/Notes/Right%20Swipe.png "Swipe me daddy"
-[Hold]: https://raw.githubusercontent.com/overscopestudio/overscopestudio.github.io/master/Images/Notes/Hold.png "Hold me close"
-[Golden]: https://raw.githubusercontent.com/overscopestudio/overscopestudio.github.io/master/Images/Notes/Golden.png "money money money"
-[Poison]: https://raw.githubusercontent.com/overscopestudio/overscopestudio.github.io/master/Images/Notes/Poison.png "Looks more spiky than poisonous but whatever"
+[Hold]: https://raw.githubusercontent.com/overscopestudio/overscopestudio.github.io/master/Images/Notes "Hold me close"
+[Golden]: https://raw.githubusercontent.com/overscopestudio/overscopestudio.github.io/master/Images/Note "money money money"
+[Poison]: https://raw.githubusercontent.com/overscopestudio/overscopestudio.github.io/master/Images/Notes "Looks more spiky than poisonous but whatever"
 [Fake]: https://raw.githubusercontent.com/overscopestudio/overscopestudio.github.io/master/Images/Notes/Mike1.png "Mike is placeholder for the fake notes"
 
 ### Unique Selling Points
