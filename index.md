@@ -38,15 +38,15 @@ While in the level, various notes will fall towards the bottom of the screen in 
 	<td>Hold notes are held. They're also blue?</td>
 </tr>
 <tr>
-	<td><img src="./Imagess/Notes/Golden.png"></td>
+	<td><img src="./Images/Notes/Golden.png"></td>
 	<td>Golden notes are super tapped, they're worth lots of score! </td>
 </tr>
 <tr>
-	<td><img src="./Imagess/Notes/Poison.png"></td>
+	<td><img src="./Images/Notes/Poison.png"></td>
 	<td>Poison notes are ouch but give score, tap if you dare!</td>
 </tr>
 <tr>
-	<td><!--<img src="./Imagess/Notes/Poison.png">--></td>
+	<td><!--<img src="./Images/Notes/Poison.png">--></td>
 	<td>Fake notes aren't even there, it's all in your head, do not tap! </td>
 </tr>
 </table>
