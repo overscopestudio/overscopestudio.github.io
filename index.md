@@ -20,21 +20,36 @@ While in the level, various notes will fall towards the bottom of the screen in 
 
 
 ### Notes You'll Encounter
-
-| Image | Description |
-| -- | -- |
-| ![Something went wrong][Default] | Default notes are tapped. |
-| -- | -- |
-| ![Something went wrong][Swipe] | Swipe notes are swiped. |
-| -- | -- |
-| ![Something went wrong][Hold] | Hold notes are held. They're also blue? |
-| -- | -- |
-| ![Something went wrong][Golden] | Golden notes are super tapped, they're worth lots of score! |
-| -- | -- |
-| ![Something went wrong][Poison] | Poison notes are ouch but give score, tap if you dare! |
-| -- | -- |
-| ![Something went wrong][Fake] | Fake notes aren't even there, it's all in your head, do not tap! |
-| -- | -- |
+<table>
+  <td>
+	<th>Image</th>
+	<th>Description</th>
+  </td>
+<td>
+	<tr>![Something went wrong][Default]</tr>
+	<tr>Default notes are tapped</tr>
+</td>
+<td>
+	<tr>![Something went wrong][Swipe]</tr>
+	<tr>Swipe notes are swiped</tr>
+</td>
+<td>
+	<tr>![Something went wrong][Hold]</tr>
+	<tr>Hold notes are held. They're also blue?</tr>
+</td>
+<td>
+	<tr>![Something went wrong][Golden]</tr>
+	<tr>Golden notes are super tapped, they're worth lots of score! </tr>
+</td>
+<td>
+	<tr>![Something went wrong][Poison]</tr>
+	<tr>Poison notes are ouch but give score, tap if you dare!</tr>
+</td>
+<td>
+	<tr>![Something went wrong][Fake]</tr>
+	<tr>Fake notes aren't even there, it's all in your head, do not tap! </tr>
+</td>
+</table>
 
 [Default]: https://raw.githubusercontent.com/overscopestudio/overscopestudio.github.io/master/Images/Notes/Default.png "One tappy boi"
 [Swipe]: https://raw.githubusercontent.com/overscopestudio/overscopestudio.github.io/master/Images/Notes/Right%20Swipe.png "Swipe me daddy"
