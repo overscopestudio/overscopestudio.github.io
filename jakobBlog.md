@@ -48,7 +48,7 @@ Being able to 'see' our song brought convenience to the process of beatmapping, 
 
 Suddenly, a spark of genius! Audio isn't the only thing we can export with Audacity, it also supports the creation and exporting of labels! 
 
-<details><summary>Some labels next to a waveform - our visual interface.</summary>
+<details><summary>Exporting!</summary>
 <p>
 
 <img src="./Images/Snippets/export.PNG">
@@ -58,10 +58,10 @@ Suddenly, a spark of genius! Audio isn't the only thing we can export with Audac
 
 Labels are exported as a text file in a specific format, showing the start & end time of the label, as well as the description of the label.
 
-<details><summary>Some labels next to a waveform - our visual interface.</summary>
+<details><summary>Here's the format of some exported labels.</summary>
 <p>
 
-<img src="./Images/Snippets/audacity.PNG">
+<img src="./Images/Snippets/text.PNG">
 
 </p>
 </details>
