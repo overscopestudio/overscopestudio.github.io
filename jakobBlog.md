@@ -61,7 +61,7 @@ Labels are exported as a text file in a specific format, showing the start & end
 <details><summary>Here's the format of some exported labels.</summary>
 <p>
 
-<img src="./Images/Snippets/text.PNG">
+<img src="./Images/Snippets/notes.PNG">
 
 </p>
 </details>
