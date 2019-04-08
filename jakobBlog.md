@@ -38,6 +38,14 @@ Upon loading an audio file into Audacity, we're shown a visual representation of
 
 Being able to 'see' our song brought convenience to the process of beatmapping, but how about actually adding the beats to the game? Initially we played around with the idea of manually filling an array within the engine itself, or using a graph in visual scripting (Blueprints) to mark floating point numbers.
 
+<details><summary>Imagine how painful it would be to directly input into an array.</summary>
+<p>
+
+<img src="./Images/Snippets/array.PNG">
+
+</p>
+</details>
+
 Suddenly, a spark of genius! Audio isn't the only thing we can export with Audacity, it also supports the creation and exporting of labels! 
 
 <details><summary>Some labels next to a waveform - our visual interface.</summary>
