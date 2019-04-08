@@ -432,13 +432,3 @@ UPROPERTY(EditAnywhere, Category = "Text File Input")
 </p>
 </details>
 
-
-
-
-// TODO:
-Describe architecture and engineering of the game
-Engineering value of game AND MY component
-Throw some diagrams and "data analyses" in there (see brief)
-Illustrate engineering aspects using UML or smth
-
-
