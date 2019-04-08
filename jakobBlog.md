@@ -25,7 +25,18 @@ However, we eventually settled on using a free software called Audacity.
 #include "LoadAudacityLabelsToArray.h"
 ```
 
-Upon loading an audio file into Audacity, we're shown a visual representation of the audio (known as a "waveform"). Being able to 'see' our song brought convenience to the process of beatmapping, but how about actually adding the beats to the game? Initially we played around with the idea of manually filling an array within the engine itself, or using a graph in visual scripting (Blueprints) to mark floating point numbers.
+Upon loading an audio file into Audacity, we're shown a visual representation of the audio (known as a "waveform"). 
+
+
+<details><summary>Some labels next to a waveform - our visual interface.</summary>
+<p>
+
+<img src="./Images/Snippets/audacity.PNG">
+
+</p>
+</details>
+
+Being able to 'see' our song brought convenience to the process of beatmapping, but how about actually adding the beats to the game? Initially we played around with the idea of manually filling an array within the engine itself, or using a graph in visual scripting (Blueprints) to mark floating point numbers.
 
 Suddenly, a spark of genius! Audio isn't the only thing we can export with Audacity, it also supports the creation and exporting of labels! Labels are exported as a text file in a specific format, showing the start & end time of the label, as well as the description of the label.
 
@@ -87,9 +98,7 @@ The start time of the label would represent the 'perfect time' for the player to
 
 This allows our designers to map notes directly to the waveform, providing both convenience and precision.
 
-Here's the function from the first working revision of the class that would actually do the interpretation, character by character. 
-
-<b>Be careful however, it contains a rather lengthy "if" statement.</b>
+Here's the function from the first working revision of the class that would actually do the interpretation, character by character. <b>Be careful however, it contains a rather lengthy "if" statement.</b>
 
 <details><summary>if ( reader == click_here ) { show mess; }</summary>
 <p>
