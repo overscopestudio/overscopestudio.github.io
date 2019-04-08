@@ -17,7 +17,7 @@
 
 I'm Jakob, one of the three programmers working on Jazz Odyssey. My primary focus for our game was input; detecting player touches and calculating gestures for mobile, as well as how our game objects respond to these gestures. However, as I covered input in my UML poster, I'll be focusing on a different component for this blog post.
 
-One of the first things I had taken into consideration regarding our rhythm game was the process of mapping the 'beats' (buttons that the player would tap) to a given audio file, a process I'll refer to as 'beatmapping'. We knew we would need some sort of visual interface or tool to assist, but struggled to think of ways to streamline the process outside of creating new software. Before the first week, another of our programmers (Ashley) had already a lot of progress on a custom Unreal Engine plug in, complete with an interface for visual assistance! 
+One of the first things I had taken into consideration regarding our rhythm game was the process of mapping the timing of 'beats' (buttons that the player would tap) to a given audio file, a process I'll refer to as 'beatmapping'. We knew we would need some sort of visual interface or tool to assist, but struggled to think of ways to streamline the process outside of creating new software. Before the first week, another of our programmers (Ashley) had already a lot of progress on a custom Unreal Engine plug in, complete with an interface for visual assistance! 
 
 However, we eventually settled on using a free software called Audacity.
 
@@ -27,7 +27,7 @@ However, we eventually settled on using a free software called Audacity.
 
 Upon loading an audio file into Audacity, we're shown a visual representation of the audio (known as a "waveform"). Being able to 'see' our song brought convenience to the process of beatmapping, but how about actually adding the beats to the game? Initially we played around with the idea of manually filling an array within the engine itself, or using a graph in visual scripting (Blueprints) to mark floating point numbers.
 
-Suddenly, a spark of genius! Audio isn't the only thing we can export with Audacity, it also supports the creation and exporting of labels! Labels were exported as a text file in a specific format, showing the start & end time of the label, as well as the description of the label.
+Suddenly, a spark of genius! Audio isn't the only thing we can export with Audacity, it also supports the creation and exporting of labels! Labels are exported as a text file in a specific format, showing the start & end time of the label, as well as the description of the label.
 
 <details><summary>Turning a text file into an array of strings.</summary>
 <p>
@@ -360,6 +360,34 @@ ENoteType USpawnerPopulator::TypeSpecifierToEnum(FString type)
 
 </p>
 </details>
+
+With this component to fully populate a level from a single text file, all our designers need to do to load their Audacity beatmap into a level in our game is to specify the file name and path of the text file:
+
+
+
+<details><summary>The designer can easily change the file name and path.</summary>
+<p>
+
+```
+UPROPERTY(EditAnywhere, Category = "Text File Input") 
+	FString filePath = "D:\\";
+UPROPERTY(EditAnywhere, Category = "Text File Input") 
+	FString fileName = "notes.txt";
+```
+
+</p>
+</details>
+
+<details><summary>Here's what they see in engine.</summary>
+<p>
+
+<img src="./Images/Snippets/filepath.png">
+
+</p>
+</details>
+
+
+
 
 // TODO:
 Describe architecture and engineering of the game
