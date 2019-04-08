@@ -23,7 +23,7 @@ However, we eventually settled on using a free software called Audacity.
 #include "LoadAudacityLabelsToArray.h"
 ```
 
-Upon loading an audio file into the Audacity software, we're shown a visual representation of the audio, known as a "waveform". Being able to 'see' our song brought convenience to the process of beatmapping, but how about actually adding the beats to the game? Initially we played around with the idea of manually filling an array in the engine itself, or using a graph in visual scripting (Blueprints) to mark floating point numbers.
+Upon loading an audio file into Audacity, we're shown a visual representation of the audio (known as a "waveform"). Being able to 'see' our song brought convenience to the process of beatmapping, but how about actually adding the beats to the game? Initially we played around with the idea of manually filling an array within the engine itself, or using a graph in visual scripting (Blueprints) to mark floating point numbers.
 
 Suddenly, a spark of genius! Audio isn't the only thing we can export with Audacity, it also supports the creation and exporting of labels! Labels were exported as a text file in a specific format, showing the start & end time of the label, as well as the description of the label.
 
@@ -359,4 +359,11 @@ ENoteType USpawnerPopulator::TypeSpecifierToEnum(FString type)
 </p>
 </details>
 
-Once all is said and done
+// TODO:
+Introduce yourself and your area
+Describe architeture and engineering of the game
+Engineering value
+Throw some diagrams and "data analyses" in there (see brief)
+Illustrate engineering aspects using UML or smth
+
+
