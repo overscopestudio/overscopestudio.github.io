@@ -15,6 +15,8 @@
 ## Streamlining a Tedious Process for Our Designers
 ##### Date: 05/04/19
 
+I'm Jakob, one of the three programmers working on Jazz Odyssey. My primary focus for our game was input; detecting player touches and calculating gestures for mobile, as well as how our game objects respond to these gestures. However, as I covered input in my UML poster, I'll be focusing on a different component for this blog post.
+
 One of the first things I had taken into consideration regarding our rhythm game was the process of mapping the 'beats' (buttons that the player would tap) to a given audio file, a process I'll refer to as 'beatmapping'. We knew we would need some sort of visual interface or tool to assist, but struggled to think of ways to streamline the process outside of creating new software. Before the first week, another of our programmers (Ashley) had already a lot of progress on a custom Unreal Engine plug in, complete with an interface for visual assistance! 
 
 However, we eventually settled on using a free software called Audacity.
@@ -360,9 +362,8 @@ ENoteType USpawnerPopulator::TypeSpecifierToEnum(FString type)
 </details>
 
 // TODO:
-Introduce yourself and your area
-Describe architeture and engineering of the game
-Engineering value
+Describe architecture and engineering of the game
+Engineering value of game AND MY component
 Throw some diagrams and "data analyses" in there (see brief)
 Illustrate engineering aspects using UML or smth
 
