@@ -381,7 +381,7 @@ UPROPERTY(EditAnywhere, Category = "Text File Input")
 <details><summary>Here's what they see in engine.</summary>
 <p>
 
-<img src="./Images/Snippets/filepath.png">
+<img src="./Images/Snippets/filepath.PNG">
 
 </p>
 </details>
