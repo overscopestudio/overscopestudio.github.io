@@ -38,7 +38,25 @@ Upon loading an audio file into Audacity, we're shown a visual representation of
 
 Being able to 'see' our song brought convenience to the process of beatmapping, but how about actually adding the beats to the game? Initially we played around with the idea of manually filling an array within the engine itself, or using a graph in visual scripting (Blueprints) to mark floating point numbers.
 
-Suddenly, a spark of genius! Audio isn't the only thing we can export with Audacity, it also supports the creation and exporting of labels! Labels are exported as a text file in a specific format, showing the start & end time of the label, as well as the description of the label.
+Suddenly, a spark of genius! Audio isn't the only thing we can export with Audacity, it also supports the creation and exporting of labels! 
+
+<details><summary>Some labels next to a waveform - our visual interface.</summary>
+<p>
+
+<img src="./Images/Snippets/export.PNG">
+
+</p>
+</details>
+
+Labels are exported as a text file in a specific format, showing the start & end time of the label, as well as the description of the label.
+
+<details><summary>Some labels next to a waveform - our visual interface.</summary>
+<p>
+
+<img src="./Images/Snippets/audacity.PNG">
+
+</p>
+</details>
 
 <details><summary>Turning a text file into an array of strings.</summary>
 <p>
@@ -78,20 +96,31 @@ FString ULoadAudacityLabelsToArray::ReadFileToString(FString &textfile)
 
 The start time of the label would represent the 'perfect time' for the player to hit a note, while any notes the player has to 'hold' would also take advantage of the end time. The label description would specify which lane, type and special modifiers the note should spawn with. For example, "lpb" would spawn a note in the LEFT lane, with the POISON note type, with the BUBBLED modifier.
 
-<details><summary>Structure of the text file from Audacity.</summary>
+<details><summary>This can be changed by the designers too.</summary>
 <p>
 
 ```
-	/*	We have loadResult, a raw string version of the text file
-		Load result has the following structure:
-		
-		5.145463	7.645463	lh
-		9.621003	9.621003	r
-		10.054357	10.054357	rpb
-		11.151207	11.151207	l
-		
-		(start)		(end)		(label)	*/
+	UPROPERTY(EditAnywhere, Category = "Lane Specifiers") 
+		FString leftLaneSpecifier = "l";
+	UPROPERTY(EditAnywhere, Category = "Lane Specifiers") 
+		FString rightLaneSpecifier = "r";
+
+	UPROPERTY(EditAnywhere, Category = "Type Specifiers") 
+		FString goldenNoteSpecifier = "g";
+	UPROPERTY(EditAnywhere, Category = "Type Specifiers") 
+		FString holdNoteSpecifier = "h";
+
+	UPROPERTY(EditAnywhere, Category = "Special Modifiers") 
+		FString bubbledNoteSpecifier = "b";
 ```
+
+</p>
+</details>
+
+<details><summary>Because we use variables, the code can handle any single letter specifiers!</summary>
+<p>
+
+<img src="./Images/Snippets/specifiers.PNG">
 
 </p>
 </details>
