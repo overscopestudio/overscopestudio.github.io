@@ -57,7 +57,7 @@ In this attempt, I created the pseudo-recursive algorithm that I mention in my t
 
 <details> <summary> A flowchart to show in short the process behind the Leaves </summary>
 <p>
-<img src="./Images/Jonch/LeavesFlow.PNG">
+<img src="./Images/Jonch/LeavesFlow.png">
 </p> </details>
 
 This is what worked best at the time, but now looking back I would change it again so that the Head handles the communication with the Player Object. This saves all the buttons being linked to the Player Object when it could be just the Head which is linked.
@@ -68,7 +68,7 @@ Towards the end of the project, I needed to make the map and the access to level
 
 <details> <summary> The simple flowchart about the save system </summary>
 <p>
-<img src="./Images/Jonch/SaveSystem.PNG">
+<img src="./Images/Jonch/SaveSystem.png">
 </p> </details>
 
 <details> <summary> And the slightly less simple Pseudo code of almost what is happening </summary>
