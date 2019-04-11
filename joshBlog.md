@@ -19,6 +19,7 @@ I'm Josh, the youngest of three programmers working on Jazz Odyssey. My main pro
 
 <details><summary> The final outcome looked like this: </summary>
 <p> <img src="./Images/Jonch/map.PNG"> </p> <details>
+
 There are 5 buttons around the map, each in their own unique area, and the single player sprite in the center, as well as many invisible waypoints scattered around that create the paths.
 
 When I started thinking about this problem, I thought about a couple of ways I could go about setting this all up. I ended up going with the idea I would need a sort of Tree of objects in the scene, which would act as waypoints for the player to navigate across.
