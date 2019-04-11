@@ -25,7 +25,8 @@ There are 5 buttons around the map, each in their own unique area, and the singl
 When I started thinking about this problem, I thought about a couple of ways I could go about setting this all up. I ended up going with the idea I would need a sort of Tree of objects in the scene, which would act as waypoints for the player to navigate across.
 I created very crude actors to begin with, and scattered them around the map. I then created the player which received a location from the buttons when pressed, and then navigated to that location.
 <details><summary>The crude code worked something like this:</summary>
-<p> 
+<p>
+
 ```
 // BUTTON // 
 when button clicked:
@@ -40,6 +41,7 @@ loop forever:
 	travel to location that was received,
 	set self to NOT busy,
 ```
+
 </p></details>
 
 I very quickly scrapped this, as it was not expandable whatsoever and was mainly a proof of concept for my team.
